@@ -1,0 +1,27 @@
+# MPLAB X build artifacts and temporary files
+build/
+debug/
+dist/
+nbproject/Makefile-*
+nbproject/Package-*
+nbproject/private/
+*.o
+*.hex
+*.cof
+*.mcp
+*.elf
+*.lst
+*.map
+*.sym
+*.bkx
+*.cce
+*.ini
+*.mcw
+*.PJT
+*.err
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Any large binary blobs if needed (videos are small enough so we keep them, but ignoring intermediate files)
