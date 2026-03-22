@@ -1,5 +1,7 @@
 # Digital Alarm Clock using PIC16F877A
 
+![Final System Overview](Img/system.jpg)
+
 This repository contains an embedded systems mini-project for a Semester 6 course. It is a fully functional Digital Alarm Clock built using a **PIC16F877A Microcontroller** and a **DS3231 Real-Time Clock (RTC)** module.
 
 ## 🌟 Features
@@ -17,6 +19,23 @@ This repository contains an embedded systems mini-project for a Semester 6 cours
 4.  **Display:** 16x2 Character LCD (HD44780 compatible)
 5.  **Inputs:** 5x Tactile Push Buttons (with pull-up resistors enabled on Port B)
 6.  **Output:** 5V Active Buzzer
+
+### Hardware Development & Assembly
+
+**1. Early Prototyping**
+The initial testing of the hardware components and the interface was done on a breadboard.
+![Hardware Prototype](Img/prototype.jpg)
+
+**2. Complete Breadboard Assembly**
+The full wiring including the microcontroller, LCD, RTC, and buttons all integrated together.
+![Breadboard Assembly](Img/breadboard.jpg)
+
+## 💻 Circuit Design & Simulation
+
+Before physically assembling the clock, the system logic and schematic were verified using simulation software (like Proteus).
+
+![Circuit Simulation 1](Img/simulation.jpeg)
+![Circuit Simulation 2](Img/simulation%201.jpeg)
 
 ## 🔌 Pin Mapping
 
@@ -52,6 +71,8 @@ This repository contains an embedded systems mini-project for a Semester 6 cours
 4.  Click **Build Project** (the hammer icon) to generate the `.hex` file.
 5.  Use a programmer (like PICkit 3 or PICkit 4) to flash the generated hex file onto the PIC16F877A.
     *   *Note: If setting the time for the very first time, make sure `Set_Time_Date()` is uncommented in `main()`. Once set, comment it out and re-flash to avoid resetting the clock on every reboot.*
+
+![Committing and Flashing](Img/commiting.jpg)
 
 ## 🎥 Demonstrations
 
